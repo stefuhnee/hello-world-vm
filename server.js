@@ -8,4 +8,5 @@ const server = http.createServer((request, response) => {
   response.end();
 });
 
-server.listen(80);
+server.listen(3000);
+console.log('listening on port 80');
