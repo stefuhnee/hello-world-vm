@@ -1,12 +1,9 @@
-'use strict';
+var http = require('http');
 
-const http = require('http');
-
-const server = http.createServer((request, response) => {
-  response.writeHead(200, {"Content-Type": "text/html"});
+var server = http.createServer(function(request, response) {
   response.write('Hello World!');
   response.end();
 });
 
-server.listen(3000);
+server.listen(80);
 console.log('listening on port 80');
